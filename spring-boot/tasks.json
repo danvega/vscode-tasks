@@ -1,51 +1,35 @@
 {
-	// the version of this task
 	"version": "0.1.0",
-	
-	// the command to run
 	"command": "spring",
-	
-	// do yo uwant to run this as a shell command
 	"isShellCommand": true,
-	
-	// output window behavior 
 	"showOutput": "silent",
-	
-	// -d prints additional status information  for the command you are running
 	"args": ["-d"],
-	
-	// commands
 	"tasks": [
 		{
-			// spring run
 			"taskName": "run",
 			"args": ["run ${file}"],
 			"suppressTaskName": true,
 			"showOutput": "always"
 		},
 		{
-			// spring test
 			"taskName": "test",
 			"args": ["test ${file}"],
 			"suppressTaskName": true,
 			"showOutput": "always"
 		},
 		{
-			// spring init
 			"taskName": "Create Spring Boot Application (Java/Maven/Web)",
 			"args": [" init -d=web", "${workspaceRoot}"],
 			"suppressTaskName": true,
 			"showOutput": "silent"
 		},
 		{
-			// spring init
 			"taskName": "Create Spring Boot Application (Groovy/Gradle/Web)",
 			"args": [" init -d=web -l=groovy --build=gradle", "${workspaceRoot}"],
 			"suppressTaskName": true,
 			"showOutput": "silent"			
 		},
 		{
-			// spring jar
 			"taskName": "Create Executable JAR",
 			"args": ["jar ${workspaceRoot}.jar *.groovy"],
 			"suppressTaskName": true,
