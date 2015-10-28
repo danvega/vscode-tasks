@@ -1,0 +1,44 @@
+{
+	
+	"version": "0.1.0",
+	"command": "mvn",
+	"isShellCommand": true,
+	"showOutput": "silent",
+	"args": [
+		
+	],
+	"tasks": [
+		{
+			"taskName": "Spring Boot Run",
+			"suppressTaskName": true,
+			"args": [
+				"spring-boot:run"
+			],
+			"showOutput": "always"
+		},
+		{
+			"taskName": "clean",
+			"args": [
+				"clean"
+			],
+			"showOutput": "always"
+		},
+		{
+			"taskName": "Maven Version",
+			"suppressTaskName": true,
+			"args": [
+				"-v"	
+			],
+			"showOutput": "always"
+		},
+		{
+			"taskName": "Maven Help",
+			"suppressTaskName": true,
+			"args": [
+				"--help"
+			],
+			"showOutput": "always"
+		}
+	]
+	
+}
